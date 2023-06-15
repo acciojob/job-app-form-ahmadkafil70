@@ -14,16 +14,16 @@
 <div>
 <label for="name">Name:</label> 
 </div>
- <input type="text" name="name" id="name" placeholder="First Name">
+ <input type="text" name="name" id="name" placeholder="First Name" required>
 </div>
 <div>
             <label for="email">Email:</label> <br>
-            <input type="email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" value="kafil@gmail.com" name="email" id="email">
+            <input type="email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" value="kafil@gmail.com" name="email" id="email" required>
         </div>
 	<div>
             <label for="Gender">Gender</label>
-            <input type="radio" name="Gender">Male
-            <input type="radio" name="Gender">Female
+            <input type="radio" name="Gender" required >Male
+            <input type="radio" name="Gender" required >Female
         
         </div>
 	<div>
@@ -34,14 +34,18 @@
                 <option value="Asus">Asus</option>
                 <option value="HP">HP</option>
             </select>
+        </div
+			<div>
+            <label for="age">Age:</label> <br>
+            <input type="number"  max="1000"  name="age" id="age" required>
         </div>
 	<div>
             <label for="dob">Date of Birth:</label> <br>
-            <input type="date" name="dob" id="dob">
+            <input type="date" name="dob" id="dob" required>
         </div>
 		<div>
             <label for="password">Create a password:</label> <br>
-            <input type="password" name="password" maxlength="5" id="password">
+            <input type="password" name="password" maxlength="5" id="password" required>
         </div>
 		<div>
             <input type="submit">
